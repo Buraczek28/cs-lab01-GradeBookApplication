@@ -116,31 +116,31 @@ namespace GradeBook.GradeBooks
             {
                 case 'A':
 
-                    if (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)
+                    if ((studentType == StudentType.Honors || studentType == StudentType.DualEnrolled) && IsWeighted)
                         return 4 + 1;
                     else return 4;
 
                 case 'B':
 
-                    if (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)
+                    if ((studentType == StudentType.Honors || studentType == StudentType.DualEnrolled) && IsWeighted)
                         return 3 + 1;
                     else return 3;
 
                 case 'C':
 
-                    if (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)
+                    if ((studentType == StudentType.Honors || studentType == StudentType.DualEnrolled) && IsWeighted)
                         return 2 + 1;
                     else return 2;
 
                 case 'D':
 
-                    if (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)
+                    if ((studentType == StudentType.Honors || studentType == StudentType.DualEnrolled) && IsWeighted)
                         return 1 + 1;
                     else return 1;
 
                 case 'F':
 
-                    if (studentType == StudentType.Honors || studentType == StudentType.DualEnrolled)
+                    if ((studentType == StudentType.Honors || studentType == StudentType.DualEnrolled) && IsWeighted)
                         return 0 + 1;
                     else return 0;
             }
